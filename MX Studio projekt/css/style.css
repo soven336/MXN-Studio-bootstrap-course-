@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+[id]{
+  scroll-margin-top:79px;
+}
+@media(min-width: 992px){
+  [id]{
+    scroll-margin-top:69px;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  min-width:300px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index:-1;
+}
+
+.orange-color {
+  color: #ff6600;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.nav-link, .navbar-toggler-icon {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+/* skecja powitalna */
+.home{
+  position: relative;
+  height:60rem;
+  z-index:0;
+  background-image: url('../img/building.jpg');
+  background-size: cover;/* rozciągnięcie */
+ background-position: center;
+}
+.home .btn{
+  padding: 1em 2em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.home .welcome-text{
+  font-size: 2.2rem;
+}
+/* SEKCJA ABOUTS AS */
+
+.abouts-box h3{
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.abouts-icon{
+  font-size: 4rem;
+}
+.accordion-button{
+  font-size: 1.8rem;
+  padding: 1em;
+}
+.accordion-button:not(.collapsed){
+  background-color:rgb(244, 244, 244);
+  color:#212529;
+  font-weight:bold;
+ }
+.accordion-button:focus{
+  box-shadow: 0 0 0.35rem #212529;
+} 
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+.accordion-body {
+  background-color: rgb(247, 247, 247);
+}
+/* TEAM */
+.team{
+  background:linear-gradient(to bottom, white 0%, rgb(244, 244, 244) 5%,rgb(244, 244, 244) 95%, white 100%);
+}
+.team .card-img-top{
+  height:300px;
+  object-fit: cover;
+}
+.team .card-title{
+  font-size: 2rem;
+}
+/* kontakt */
+.contact h3{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+.contact .submit-btn{
+  font-size: 1.6rem;
+}
+.contact textarea{
+  font-size: 1.6rem;
+}

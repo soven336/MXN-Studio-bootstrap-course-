@@ -1,0 +1,37 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    background-color: #fff;
+}
+html{
+    font-size: 62.5%; //10px
+    scroll-behavior: smooth;
+}
+body{
+    fonst-family:'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background-color:#333;
+}
+.hero-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    widows: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0.8);
+}
+.orange-color{
+    color:red;
+}
+// nawigacjass
+
+.navbar-brand{
+    font-size:2.2rem;
+    text-transform: uppercase;
+}
+.nav-link, .navbar-toggler-icon{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+// SEKCJA POWITALNA
